@@ -738,6 +738,25 @@ body.mobile-nav-active #mobile-nav-toggle {
   top: 4px;
 }
 
+#testimonials .social {
+  margin-bottom: 15px;
+}
+
+#testimonials .social a {
+  color: #b3b3b3;
+/*  border: 2px solid #b3b3b3;*/
+}
+
+#testimonials .social a:hover {
+  color: #03C4EB;
+}
+
+#testimonials .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+
 /* Team Section
 --------------------------------*/
 #team {
@@ -788,10 +807,40 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 0 2px;
 }
 
+/* Partner Section
+--------------------------------*/
+#partner {
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9));
+  padding: 80px 0;
+}
+
+#partner .meitar-logo {
+    width: 20%;
+}
+
+/* Marathon Section
+--------------------------------*/
+#marathon {
+  background: #f7f7f7;
+  padding: 80px 0;
+}
+
+/*
+#marathon .about-container {
+  background: url(../img/ddPics/beetieMarathon.jpg) left top no-repeat;
+}
+
+#marathon .about-container-right {
+  background: url(../img/ddPics/beetieMarathon.jpg) right top no-repeat;
+}
+*/
+
+
 /* Contact Section
 --------------------------------*/
 #contact {
-  background: #f7f7f7;
+/*  background: #f7f7f7;*/
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9));
   padding: 80px 0;
 }
 
