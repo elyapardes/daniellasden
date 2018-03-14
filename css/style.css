@@ -836,12 +836,19 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 */
 
+/* Donate Section
+--------------------------------*/
+#donation {
+ background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9));
+  padding: 80px 0;
+}
+
 
 /* Contact Section
 --------------------------------*/
 #contact {
-/*  background: #f7f7f7;*/
-    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9));
+  background: #f7f7f7;
+/*    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9));*/
   padding: 80px 0;
 }
 
