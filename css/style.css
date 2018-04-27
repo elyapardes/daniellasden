@@ -937,5 +937,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 #nav-menu-container.rtl {
   float: left;
 }
+#testimonials .quote b.rtl {
+  left: 9px;
+}
 
 
