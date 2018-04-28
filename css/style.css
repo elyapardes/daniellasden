@@ -928,17 +928,4 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #ccc;
 }
 
-/*--------------------------------------------------------------
-# Hebrew page
---------------------------------------------------------------*/
-.nav-menu > li.rtl {
-  float: right;
-}
-#nav-menu-container.rtl {
-  float: left;
-}
-#testimonials .quote b.rtl {
-  left: 9px;
-}
-
 
