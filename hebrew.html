@@ -37,6 +37,8 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
+  <link href="lib/bootstrap-rtl/bootstrap.rtl.min.css" rel="stylesheet">
+  <link href="css/style-rtl.css" rel="stylesheet">
 
   <!-- =======================================================
     Theme Name: Imperial
@@ -46,7 +48,7 @@
   ======================================================= -->
 </head>
 
-<body dir=RTL >
+<body>
   <div id="preloader"></div>
 
   <!--==========================
@@ -62,12 +64,10 @@
           <img style="width: 5%;" src="img/ddPics/DPlogoNoBackground.png" alt="Imperial">
         </div>
         <h2 style="color: white">מרכז יום שיקומי לנוער</h2>
-<!--
         <div class="actions">
-          <a href="#about" class="btn-get-started">English</a>
-          <a href="#services" class="btn-get-started">עברית</a>
+          <a href="index.html#header" class="btn-get-started">English</a>
+          <a href="#about" class="btn-get-started">עברית</a>
         </div>
--->
       </div>
     </div>
   </section>
@@ -87,7 +87,9 @@
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li class="menu-active"><a href="#hero">בית</a></li>
-          <li><a href="#about"> הסיפור שלנו</a></li>
+          <li><a href="#about">הסיפור שלנו</a></li>
+          <li><a href="#testimonials">הצוות שלנו</a></li>
+          <li><a href="#marathon">מרתון</a></li>
 <!--
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
@@ -113,10 +115,8 @@
           </li>
 -->
           <li><a href="#donation">תרום לנו</a></li>
-            <li><a href="#contact">צור קשר</a></li>
-             
-            
-          <li><a href="index.html">English</a></li>
+          <li><a href="#contact">צור קשר</a></li>  
+          <li><a href="index.html#header">English</a></li>
 <!--         <li><a href="#hebrew">עברית</a></li>-->
             
         </ul>
@@ -142,7 +142,7 @@
     <div class="container about-container wow fadeInUp"> 
 <!--        daniella's pics from above-->
       <div class="row">
-        <div class="col-md-6 col-md-push-6 about-content">
+        <div class="col-md-6 about-content">
             
           <h2 class="about-title">למה <span style="font-size: 20px">בית דניאלה?</span></h2>
           <p class="about-text">
@@ -150,6 +150,9 @@
 כעבור מספר חודשים, הגיע הזמן לשלב את דניאלה חזרה אל תוך החברה. אמא של דניאלה, הדסה-חיפשה תוכנית חינוכית טפולית שתוכל לספוג, להגן, ובמקביל להחזיר אותה חזרה אל העולם והחברה. החיפושים הנוקבים הותירו אותה ללא מענה מתאימה. ב11 בדצמבר 2017, בגיל 14, דניאלה שמה קץ לחייה. בית דניאלה הוקם כדי לתת מענה הכולל טיפול באמצעות כלבים, לאותם נערים הסובלים מקשיים רגשיים, המחפשים את השלב השיקומי הראשוני הכל כך קריטי. 
 
           </p>
+        </div>
+        <div class="col-md-6 about-content">
+          <img src="img/ddPics/daniellaandDog.JPG"
         </div>
       </div>
     </div>
@@ -354,21 +357,22 @@
   </section>
 -->
 
+
   <!--==========================
   Testimonials Section
   ============================-->
-<!--
   <section id="testimonials">
     <div class="container wow fadeInUp">
       <div class="row">
         <div class="col-md-12">
-          <h3 class="section-title">Testimonials</h3>
+          <h3 class="section-title">הצוות שלנו</h3>
           <div class="section-title-divider"></div>
-          <p class="section-description">Erdo lide, nora porodo filece, salvam esse se, quod concedimus ses haec dicturum fuisse</p>
+<!--          <p class="section-description">Erdo lide, nora porodo filece, salvam esse se, quod concedimus ses haec dicturum fuisse</p>-->
         </div>
       </div>
 
       <div class="row">
+<!--
         <div class="col-md-3">
           <div class="profile">
             <div class="pic"><img src="img/client-1.jpg" alt=""></div>
@@ -376,31 +380,99 @@
             <span>Lawless Inc</span>
           </div>
         </div>
-        <div class="col-md-9">
+-->
+        <div class="col-md-12">
           <div class="quote">
-            <b><img src="img/quote_sign_left.png" alt=""></b> Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper. <small><img src="img/quote_sign_right.png" alt=""></small>
+            <b> <a href="https://www.linkedin.com/in/hadassajakobovits/" style="text-decoration: underline">הדסה יעקובוביץ פרדס</a>, מייסדת</b>
+              <span class="social pull-right">
+              <a href="https://www.linkedin.com/in/hadassajakobovits/"><i class="fa fa-linkedin"></i></a>
+            </span>
+              <br/>
+              הדסה בעלת דוקטורט במדעי המחשב ותואר MBA. ניסיונה המקצועי בחברות היי-טק ובניהול תכנית המדע לאבטחת מידע ב-NATO העניק לה יכולות יזמיות, ויכולת הפיכת חזון למציאות בהקמת פרויקטים ובניהולם. מקצועיות זו משתלבת עם נחישותה להקמת מקלט ומרכז שיקומי לנוער בירושלים הזקוק לו כל כך. 
           </div>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-md-9">
-          <div class="quote">
-            <b><img src="img/quote_sign_left.png" alt=""></b> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis architecto beatae. <small><img src="img/quote_sign_right.png" alt=""></small>
-          </div>
-        </div>
+<!--
         <div class="col-md-3">
           <div class="profile">
-            <div class="pic"><img src="img/client-2.jpg" alt=""></div>
-            <h4>Sara Wilsson</h4>
-            <span>Odeo Inc</span>
+            <div class="pic"><img src="img/client-1.jpg" alt=""></div>
+            <h4>Saul Goodman</h4>
+            <span>Lawless Inc</span>
+          </div>
+        </div>
+-->
+        <div class="col-md-12">
+          <div class="quote">
+            <b><a href="https://www.linkedin.com/in/sarah-m-eisen-2112b910/" style="text-decoration: underline">שרה מלכה אייזן</a>, מנכלי"ת</b> 
+               <span class="social pull-right">
+              <a href="https://www.linkedin.com/in/sarah-m-eisen-2112b910/"><i class="fa fa-linkedin"></i></a>
+            </span>
+              <br/>
+              הקריירה הרב-צדדית של שרה מלכה משלבת בין חינוך, יחסים ציבוריים, ואקטיביזם. היא מתמחה בחינוך מבוגרים ולימדה במכון שאפל, מעיינות, ומתן. כמומחית לשיווק, שרה מלכה לקחה ארגונים קטנים בה היא האמינה ושמה אותם על המפה. מקידום רווחת ילדים במצוקה ועד לחינוך כלכלי למגזר החרדי, שרה מלכה פועלת לנען שינויים חברתיים בנחישות ובתשוקה.
           </div>
         </div>
       </div>
 
+        
+<div class="row">
+<!--
+        <div class="col-md-3">
+          <div class="profile">
+            <div class="pic"><img src="img/client-1.jpg" alt=""></div>
+            <h4>Saul Goodman</h4>
+            <span>Lawless Inc</span>
+          </div>
+        </div>
+-->
+        <div class="col-md-12">
+          <div class="quote">
+            <b>עופר ביטון, מנהל טיפולי – טיפול באמצעות בעלי חיים</b> 
+              <br/>
+              חלוץ בטיפול באמצעות כלבים בישראל, עופר החל את עבודתו בתחום בשנת 2005, עם הקמת בית ספר לטיפול באמצעות כלבים באוניברסיטת בר אילן. כיום הוא יושב כראש חוג לטיפול באמצעות כלבים 
+              <a href="https://www.broshim.tau.org.il/">בקמפוס ברושים בתל אביב.</a>
+               בנוסף להיותו מטפל כלבים מנוסה, עופר מכשיר צוותים טיפוליים במסגרות שונות בארץ ונותן שירותי יעוץ לכלביות ולמוסדות טיפוליים כאחד.
+          <br/><br/>
+              בשנת 2010 הקים עופר את הכלבייה הטיפולית הראשונה בישראל, במעון לנערות בסיכון. הכלבייה הטיפולית משרתת בני נוער בסיכון מהמכון ומחוצה לו, וקבוצות של נערים בעלי צרכים מיוחדים. בין היתר, עופר מעניק שירות למחלקה הפסיכיאטרית לילד ולמתבגר בבית החולים הדסה.   
+             </div>
+        </div>
+      </div>
+        
+        
+    <div class="row">
+<!--
+        <div class="col-md-3">
+          <div class="profile">
+            <div class="pic"><img src="img/client-1.jpg" alt=""></div>
+            <h4>Saul Goodman</h4>
+            <span>Lawless Inc</span>
+          </div>
+        </div>
+-->
+        <div class="col-md-12">
+          <div class="quote">
+            <b>ניסים סמדג'ה, יועץ</b> 
+              <br/>
+             ניסים יושב כרגע כמפקח ב<a href="https://he.wikipedia.org/wiki/%D7%A8%D7%A9%D7%95%D7%AA_%D7%97%D7%A1%D7%95%D7%AA_%D7%94%D7%A0%D7%95%D7%A2%D7%A8">חסות הנוער</a>,
+               ולימים ניהל מוסדות לנוער בסיכון. הוא גורם מוביל בפיתוח ויישום הכשרה מקצועית ופיקוח בעלי מקצוע בתחום. בעל הכשרה אקדמית בעבודה סוציאלית ויעוץ ארגוני, ניסים משלב בין שתי הדיסציפלינות בעבודתו הנרחבת עם בני נוער בסיכון לאחר 30 שנות ניסיון בתחום. בין שאר פעילויותיו, פיתוח יוזמות
+              <a href="https://he.wikipedia.org/wiki/%D7%94%D7%9E%D7%A8%D7%AA%D7%A3"> המרתף</a>
+              (תיאטרון חדשני לנוער בסיכון), והכלבייה הטיפולית במכון מסילה (מכון לנערות מתבגרות בסיכון גבוהה). הוציא לאור ספר על תפיסת ההתערבות בחסות הנוער "מסע החסות אל הנוער" הוצאת ענב.
+              <br/>
+              ניסים מרצה בתחום הטיפול ב<a href="http://www.smkb.ac.il/">מכללת סמינר הקיבוצים</a>
+               <a href="https://www.broshim.tau.org.il/">ומכללת ברושים</a>,
+                מדריך ומלווה צוותים וארגונים בתחומי הטיפול, החינוך והתפתחות הארגונית בתכנית העמיתים של 
+                <a href="https://school.mandelfoundation.org.il/Pages/default.aspx">"בית הספר למנהיגות חינוכית- מנדל"</a>,
+                 ו"בית הספר ראיה לתקשורת מקדמת".
+<br/><br/>
+          </div>
+        </div>
+      </div>
+        
+        
     </div>
   </section>
--->
+
 
   <!--==========================
   Team Section
@@ -502,6 +574,58 @@
     </div>
   </section>    
   
+   
+<!--==========================
+  Marathon Section
+  ============================-->
+  <section id="marathon">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">מרתון ירושלים</h3>
+          <div class="section-title-divider"></div>
+<!--          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>-->
+        </div>
+      </div>
+
+    <div class="container about-container wow fadeInUp"> 
+<!--        daniella's pics from above-->
+      <div class="row">
+          <div class="col-md-9 about-content">
+          <p class="about-text">
+            בזכות קהילה תומכת ויוזמה קהילתית ספונטנית, חברותיה של דניאלה ז"ל אחיותיה, הצטרפו יחד לריצת מרתון בירושלים, ביום שישי  9 במרץ 2018, כדי לתמוך בבית דניאלה. לשמחתנו, 135 רצים נרשמו למרתון!
+            <br/><br/>
+            ערב המרתון בערב פסטה בבית הפרדס, הדסה פרדס שתפה אותנו במוטיבציה העמוקה שלה בהקמת בית דניאלה. צעירים רבים נאבקים בימים אלו בבעיות רגשיות והיא רוצה להעניק להם את מה  שהיה חסר לדניאלה . נוסף על כך, עופר ביטון, המטפל באמצעות כלבים של דניאלה, שיתף בניסיונו בעבודה עם דניאלה על אודות יעילותה של התרפיה דרך בעלי החיים. זאת ועוד, שרה מלכה אייזן עדכנה את הקהל על התקדמותנו המעשית בהפיכת הגשמת החזון של בית דניאלה מחזון למציאות.
+              
+              <br/><br/>
+              החדשות המרגשות ביותר: 
+                              <br/><br/>
+                              הרצה המובילה שלנו, בת הדודה בטי דויטש, אם לחמישה ילדים צעירים, הגיעה למקום הראשון בקטגוריית הנשים, בריצה של 42 ק"מ במשך 3 שעות, 9 דקות ו-48 שניות!       
+                                     <br/><br/>
+                                     זה היה המרתון השלישי של בטי, אך זו הייתה הפעם הראשונה שהשתתפה במרתון ההררי הירושלמי המאתגר במיוחד. בטי אמרה: "הזיכרון של דניאלה והסיכוי להקים את בית דניאלה  מקלט לבני נוער שסובלים כפי שהיא סבלה  עוררו בי את המוטיבציה לרוץ הכי מהר שאני יכולה!"      
+                                             <br/><br/>
+                                             בעבר בטי הגיעה למקום השישי בחצי מרתון שאירע בתל-אביב ב-  23 בפברואר 2018.  בשנה שעברה היא רצה במרתון תל-אביב בעודה בחודש השביעי להריונה, וקיבלה אפילו את ברכת אביה, רופא הנשים OB-GYN. בית דניאלה כל כך גאה בבטי ואנו מצפים לחלוק עמה עוד הרבה ריצות מרגשות בעתיד!        
+                                                   <br/><br/>
+                                                   ברכות לבטי על ניצחונה ותודתנו אליה על תרומתה לבית דניאלה  להרחבה לחץ :              <a href="https://thechesedfund.com/cause/beit-daniella-therapeutic-rehabilitative-day-center">כאן</a> 
+              
+          </p>
+        </div>
+          <div class="col-md-3">
+            <img style="width: 100%;" src="img/ddPics/beatieMarathonFinish.jpg" alt="Imperial">
+          </div>
+          
+
+      </div>
+        <div class="row">
+            <div class="col-md-12">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/yM1kiGV6jmA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+          </div>
+    </div>
+    </div>
+  </section> 
+ 
+
 <!--==========================
   Donate Section
   ============================-->

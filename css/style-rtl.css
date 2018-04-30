@@ -1,0 +1,17 @@
+/*--------------------------------------------------------------
+# Hebrew page
+--------------------------------------------------------------*/
+.nav-menu > li {
+    float: right;
+}
+#nav-menu-container {
+    float: left;
+}
+#testimonials .quote b {
+    left: 9px;
+}
+#mobile-nav-toggle {
+    position: fixed;
+    left: 0;
+    top: 0;
+}

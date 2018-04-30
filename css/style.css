@@ -484,14 +484,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 80px 0;
 }
 
-#about .about-container {
-  background: url(../img/ddPics/daniellaandDog.JPG) left top no-repeat;
-}
-
-#about .about-container-right {
-  background: url(../img/ddPics/daniellaandDog.JPG) right top no-repeat;
-}
-
 #about .about-content {
   background: #fff;
 }
@@ -935,3 +927,5 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 13px;
   color: #ccc;
 }
+
+
