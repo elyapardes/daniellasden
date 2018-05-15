@@ -79,14 +79,34 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
+.embed-responsive-9by16 {
+  padding-bottom: 177.78%;
+}
+
 /*--------------------------------------------------------------
 # Welcome
 --------------------------------------------------------------*/
+
+@media (max-width: 750px) {
+  #hero {
+    background: url(../img/ddPics/daniellaWithDogs750.jpeg) top center scroll;
+  }
+}
+@media (min-width: 750px) and (max-width: 1080px) {
+  #hero {
+    background: url(../img/ddPics/daniellaWithDogs1080.jpeg) top center scroll;
+  }
+}
+@media (min-width: 1080px) {
+  #hero {
+    background: url(../img/ddPics/daniellaWithDogs.jpeg) top center scroll;
+  }
+}
+
 #hero {
   display: table;
   width: 100%;
   height: 100vh;
-  background: url(../img/ddPics/daniellaWithDogs.jpeg) top center fixed; /*..img/ddPics/jeruHills*/
   background-size: cover;
 }
 
