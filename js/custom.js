@@ -107,4 +107,9 @@ jQuery(document).ready(function( $ ) {
       return false;
   });
 
+  setTimeout(function(){$('iframe').each(function(index){
+      if($(this)[index].dataset.url != null)
+        $(this)[index].src = $(this)[index].dataset.url;
+  })}, 2000)
+
 });
