@@ -36,3 +36,5 @@ Compiled source #
 ehthumbs.db
 Thumbs.db
 *.DS_Store
+_DS_Store
+._DS_Store
