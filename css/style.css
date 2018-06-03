@@ -795,6 +795,24 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 20px;
 }
 
+@media (min-width: 768px) {
+  #board .member {
+      margin-left: 0px;
+  }
+}
+
+@media (min-width: 992px) {
+  #board .member {
+    margin-left: 0px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #board .member {
+    margin-left: 25px;
+  }
+}
+
 #board .member .pic {
   margin-bottom: 15px;
   overflow: hidden;
