@@ -824,6 +824,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #board .member h4 {
+  color: rgb(102, 102, 102);
   font-weight: 700;
   margin-bottom: 2px;
 }
@@ -838,7 +839,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-top: 15px;
   vertical-align: bottom;
   position:absolute;
-  left:107px;
+  left:130px;
   bottom:40px;
 }
 
