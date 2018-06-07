@@ -781,52 +781,94 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Team Section
 --------------------------------*/
-#team {
-  background: #fff;
-  padding: 80px 0 60px 0;
+#board {
+  background: #f7f7f7;
+  padding: 0 0 60px 0;
 }
 
-#team .member {
+#board .member {
   text-align: center;
+  padding: 20px;
+  height: 200px;
+  width: 200px;
+  background: #fff;
   margin-bottom: 20px;
 }
 
-#team .member .pic {
+@media (min-width: 768px) {
+  #board .member {
+      margin-left: 0px;
+  }
+}
+
+@media (min-width: 992px) {
+  #board .member {
+    margin-left: 0px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #board .member {
+    margin-left: 25px;
+  }
+}
+
+#board .member .pic {
   margin-bottom: 15px;
   overflow: hidden;
   height: 260px;
 }
 
-#team .member .pic img {
+#board .member .pic img {
   max-width: 100%;
 }
 
-#team .member h4 {
+#board .member h4 {
+  color: rgb(102, 102, 102);
   font-weight: 700;
   margin-bottom: 2px;
 }
 
-#team .member span {
+#board .member span {
   font-style: italic;
   display: block;
   font-size: 13px;
 }
 
-#team .member .social {
+#board .member .social {
   margin-top: 15px;
+  vertical-align: bottom;
+  position:absolute;
+  left:130px;
+  bottom:40px;
 }
 
-#team .member .social a {
+#board .member .social a {
   color: #b3b3b3;
 }
 
-#team .member .social a:hover {
+#board .member .social a:hover {
   color: #03C4EB;
 }
 
-#team .member .social i {
+#board .member .social i {
   font-size: 18px;
   margin: 0 2px;
+}
+
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+
+.col-centered {
+  display:inline-block;
+  float:none;
+  /* reset the text-align */
+  text-align:left;
+  /* inline-block space fix */
+  margin-right:-4px;
+  vertical-align: top;
 }
 
 /* Partner Section
