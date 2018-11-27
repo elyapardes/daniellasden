@@ -739,7 +739,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: relative;
   background: #fff;
   padding: 60px;
-  margin-top: 40px;
+  margin: 40px;
   font-size: 16px;
 /*  font-style: italic;*/
   border-radius: 5px;
