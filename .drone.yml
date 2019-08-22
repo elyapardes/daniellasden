@@ -3,7 +3,7 @@ pipeline:
     image: mesosphere/aws-cli
     commands:
       - echo "Deploying to S3"
-      - aws s3 cp . s3://BUCKET_PATH --recursive --acl public-read
+      - aws s3 cp . s3://$BUCKET_PATH --recursive --acl public-read
     when:
       event: push
       branch: test
