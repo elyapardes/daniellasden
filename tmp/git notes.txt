@@ -1,0 +1,34 @@
+////////////////////////////////////////////
+
+//// Nice to haves
+
+// Only once, on first initialization:
+git clone <repository URL>
+
+// Check status, can be used at any time
+git status
+
+// List branches, can be used at any time
+git branch
+
+////////////////////////////////////////////
+
+//// When working on new features:
+
+// start from master branch
+git checkout master
+git pull origin master
+
+// create branch
+git checkout -b <new_branch>
+
+// make changes!
+
+// staging files
+git add <files>
+
+// committing changes
+git commit -m ‘<message>’
+
+// pushing to branch on github
+git push origin <new_branch>
