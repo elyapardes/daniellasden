@@ -2,15 +2,14 @@ pipeline:
   deploy:
     image: mesosphere/aws-cli
     commands:
-      - echo "deploy"
-      - echo $TEST_SECRET
-      - aws s3 ls s3://beitdaniellatest
+      - echo "Deploying to S3"
+      - aws s3 cp . s3://BUCKET_PATH --recursive --acl public-read
     when:
       event: push
       branch: test
     secrets:
-      - source: test_secret
-        target: TEST_SECRET
+      - source: bucket_path
+        target: BUCKET_PATH
       - source: aws_access_key_id
         target: AWS_ACCESS_KEY_ID
       - source: aws_secret_access_key
