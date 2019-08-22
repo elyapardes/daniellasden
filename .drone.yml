@@ -6,7 +6,9 @@ pipeline:
       - aws s3 cp . s3://$TEST_BUCKET_PATH --recursive --acl public-read
     when:
       event: push
-      branch: test
+      branch: 
+        exclude:
+        - master
     secrets:
       - source: test_bucket_path
         target: TEST_BUCKET_PATH
