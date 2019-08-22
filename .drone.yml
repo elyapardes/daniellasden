@@ -7,7 +7,6 @@ pipeline:
     when:
       event: push
       branch: test
-    
-  environment:
-    TEST_SECRET:
-      from_secret: test_secret
+    secrets:
+      - source: test_secret
+        target: TEST_SECRET
