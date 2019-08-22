@@ -1,10 +1,10 @@
 pipeline:
   deploy:
-    image: alpine:3.7
+    image: mesosphere/aws-cli
     commands:
       - echo "deploy"
       - echo $TEST_SECRET
-      - pip3 install awscli --upgrade --user
+      - aws s3 ls s3://beitdaniellatest
     when:
       event: push
       branch: test
