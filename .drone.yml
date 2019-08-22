@@ -1,0 +1,8 @@
+pipeline:
+  deploy:
+    image: alpine:3.7
+    commands:
+      - echo "deploy"
+    when:
+      event: push
+      branch: test
