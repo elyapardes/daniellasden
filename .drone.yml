@@ -1,0 +1,34 @@
+pipeline:
+  test_deploy:
+    image: mesosphere/aws-cli
+    commands:
+      - echo "Deploying to S3 - TEST"
+      - aws s3 cp . s3://$TEST_BUCKET_PATH --recursive --acl public-read
+    when:
+      event: push
+      branch: 
+        exclude:
+        - master
+    secrets:
+      - source: test_bucket_path
+        target: TEST_BUCKET_PATH
+      - source: aws_access_key_id
+        target: AWS_ACCESS_KEY_ID
+      - source: aws_secret_access_key
+        target: AWS_SECRET_ACCESS_KEY
+
+  prod_deploy:
+    image: mesosphere/aws-cli
+    commands:
+      - echo "Deploying to S3 - PROD"
+      - aws s3 cp . s3://$PROD_BUCKET_PATH --recursive --acl public-read
+    when:
+      event: push
+      branch: master
+    secrets:
+      - source: prod_bucket_path
+        target: PROD_BUCKET_PATH
+      - source: aws_access_key_id
+        target: AWS_ACCESS_KEY_ID
+      - source: aws_secret_access_key
+        target: AWS_SECRET_ACCESS_KEY
