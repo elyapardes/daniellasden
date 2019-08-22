@@ -3,6 +3,10 @@ pipeline:
     image: alpine:3.7
     commands:
       - echo "deploy"
+      - echo $TEST_SECRET
     when:
       event: push
       branch: test
+    environment:
+      TEST_SECRET:
+        from_secret: test_secret
