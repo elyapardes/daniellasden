@@ -21,13 +21,17 @@ pipeline:
     image: mesosphere/aws-cli
     commands:
       - echo "Deploying to S3 - PROD"
+      # publish to both buckets, main domain and www. subdomain
       - aws s3 cp . s3://$PROD_BUCKET_PATH --recursive --acl public-read
+      - aws s3 cp . s3://$PROD_BUCKET_PATH_SUB --recursive --acl public-read
     when:
       event: push
       branch: master
     secrets:
       - source: prod_bucket_path
         target: PROD_BUCKET_PATH
+      - source: prod_bucket_path_sub
+        target: PROD_BUCKET_PATH_SUB
       - source: aws_access_key_id
         target: AWS_ACCESS_KEY_ID
       - source: aws_secret_access_key
