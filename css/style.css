@@ -860,8 +860,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: 6px solid #fff;
   margin-bottom: 15px;
   overflow: hidden;
-  height: 260px;
-  width: 260px;
+  /* height: 260px;
+  width: 260px; */
 }
 
 #aboutus .profile .pic img {
@@ -924,61 +924,76 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Team Section
 --------------------------------*/
-#board {
+#board .member {
+  background: #fff;
+}
+
+#teammembersection {
   background: #f7f7f7;
   padding: 0 0 60px 0;
 }
 
-#board .member {
+#teammembersection .member {
   text-align: center;
   padding: 20px;
   height: 200px;
   width: 200px;
-  background: #fff;
+  /* background: #fff; */
   margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {
-  #board .member {
+  #teammembersection .member {
       margin-left: 0px;
   }
 }
 
 @media (min-width: 992px) {
-  #board .member {
+  #teammembersection .member {
     margin-left: 0px;
   }
 }
 
 @media (min-width: 1200px) {
-  #board .member {
+  #teammembersection .member {
     margin-left: 25px;
   }
 }
 
-#board .member .pic {
+#teammembersection .member .pic {
+  border-radius: 100%;
+  border: 6px solid #fff;
   margin-bottom: 15px;
   overflow: hidden;
-  height: 260px;
+  /* height: 260px; */
 }
+/* 
+#aboutus .profile .pic {
+  border-radius: 50%;
+  border: 6px solid #fff;
+  margin-bottom: 15px;
+  overflow: hidden;
+  /* height: 260px;
+  width: 260px; */
+} */
 
-#board .member .pic img {
+#teammembersection .member .pic img {
   max-width: 100%;
 }
 
-#board .member h4 {
+#teammembersection .member h4 {
   color: rgb(102, 102, 102);
   font-weight: 700;
   margin-bottom: 2px;
 }
 
-#board .member span {
+#teammembersection .member span {
   font-style: italic;
   display: block;
   font-size: 13px;
 }
 
-#board .member .social {
+#teammembersection .member .social {
   margin-top: 15px;
   vertical-align: bottom;
   position:absolute;
@@ -986,15 +1001,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   bottom:40px;
 }
 
-#board .member .social a {
+#teammembersection .member .social a {
   color: #b3b3b3;
 }
 
-#board .member .social a:hover {
+#teammembersection .member .social a:hover {
   color: #03C4EB;
 }
 
-#board .member .social i {
+#teammembersection .member .social i {
   font-size: 18px;
   margin: 0 2px;
 }
