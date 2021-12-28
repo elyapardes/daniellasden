@@ -59,6 +59,58 @@
   gtag('config', 'UA-129067138-1');
 </script>
 
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="referrer" content="no-referrer-when-downgrade">
+        <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function(){
+        const FORM_TIME_START = Math.floor((new Date).getTime()/1000);
+        let formElement = document.getElementById("tfa_0");
+        if (null === formElement) {
+            formElement = document.getElementById("0");
+        }
+        let appendJsTimerElement = function(){
+            let formTimeDiff = Math.floor((new Date).getTime()/1000) - FORM_TIME_START;
+            let cumulatedTimeElement = document.getElementById("tfa_dbCumulatedTime");
+            if (null !== cumulatedTimeElement) {
+                let cumulatedTime = parseInt(cumulatedTimeElement.value);
+                if (null !== cumulatedTime && cumulatedTime > 0) {
+                    formTimeDiff += cumulatedTime;
+                }
+            }
+            let jsTimeInput = document.createElement("input");
+            jsTimeInput.setAttribute("type", "hidden");
+            jsTimeInput.setAttribute("value", formTimeDiff.toString());
+            jsTimeInput.setAttribute("name", "tfa_dbElapsedJsTime");
+            jsTimeInput.setAttribute("id", "tfa_dbElapsedJsTime");
+            jsTimeInput.setAttribute("autocomplete", "off");
+            if (null !== formElement) {
+                formElement.appendChild(jsTimeInput);
+            }
+        };
+        if (null !== formElement) {
+            if(formElement.addEventListener){
+                formElement.addEventListener('submit', appendJsTimerElement, false);
+            } else if(formElement.attachEvent){
+                formElement.attachEvent('onsubmit', appendJsTimerElement);
+            }
+        }
+    });
+</script>
+
+<link href="https://www.tfaforms.com/dist/form-builder/5.0.0/wforms-layout.css?v=1640685614" rel="stylesheet" type="text/css" />
+
+<link href="https://www.tfaforms.com/uploads/themes/theme-68007.css" rel="stylesheet" type="text/css" />
+<link href="https://www.tfaforms.com/dist/form-builder/5.0.0/wforms-jsonly.css?v=1640685614" rel="alternate stylesheet" title="This stylesheet activated by javascript" type="text/css" />
+<script type="text/javascript" src="https://www.tfaforms.com/wForms/3.11/js/wforms.js?v=1640685614"></script>
+<script type="text/javascript">
+    wFORMS.behaviors.prefill.skip = false;
+</script>
+    <script type="text/javascript" src="https://www.tfaforms.com/wForms/3.11/js/localization-en_US.js?v=1640685614"></script>
+
+
+
+
 </head>
 
 <body><!--   make sure to include content after this line -->
@@ -133,7 +185,7 @@
                 </li>
                 <li>
                     <a href="index.html#beatie">About Beatie Deutsch</a>
-                </li>
+                    </li>
                 </ul>
             </li>
             <li>
@@ -184,71 +236,52 @@
 
 
   <!--==========================
-  Marathon 2018 Section (15_marathon2018)
+  About Section (3_story1)
   ============================-->
-  <section id="marathon2018">
+  <section id="about">
         <div class="container wow fadeInUp">
           <div class="row">
             <div class="col-md-12">
-              <h3 class="section-title">Jerusalem Marathon 2018</h3>
+              <h3 class="section-title">Jerusalem Marathon 2022</h3>
               <div class="section-title-divider"></div>
-              <!--          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>-->
+              <p class="section-description"></p>
             </div>
           </div>
-    
-          <div class="container about-container wow fadeInUp">
-              
-            <div class="row">
-              <div class="col-md-9 about-content">
-                <p class="about-text">
-                  In a show of spontaneous community support and initiative, friends of Daniella z’l and her sisters joined together to run
-                  in the Jerusalem Marathon on Friday March 9th in support of Beit Daniella. To our delight, 135 runners signed
-                  up!
-                  <br/>
-                  <br/> At Pasta Night the night before the Marathon, Hadassa Pardes poignantly shared her deep personal motivation
-                  to creating what did not exist for Daniella-thus embracing and healing so many other young people currently
-                  struggling with emotional issues. Ofer Biton, Daniella’s dog therapist, shared his experience working with
-                  Daniella touching on what makes animal assisted therapy so effective and Sarah Malka Eisen updated the crowd
-                  on our practical progress in bringing Beit Daniella from vision to reality.
-    
-                  <br/>
-                  <br/> The most exciting news:
-                  <br/>
-                  <br/> Our lead runner - Cousin Beatie Deutsch, a mother of 5 young children,took first place in the Women’s Category,
-                  running 42K in 3 hours, 9 minutes and 48 seconds!
-                  <br/>
-                  <br/> This was Beatie’s 3rd Marathon, and first time in the particularly challenging hilly, Jerusalem course. "
-                  Daniella’s memory and the prospect of creating Beit Daniella-a haven for other teens suffering as she did-inspired
-                  me to run my fastest ever!"
-                  <br/>
-                  <br/> In the past,Beatie placed 6th in the half marathon of the Tel Aviv Marathon on February 23, 2018. Last year,
-                  she ran the Tel Aviv marathon while 7 months pregnant. (Don’t worry it was with the blessing of her father
-                  who is an OB-GYN :) ). Beit Daniella is SO PROUD of Beatie and we look forward to sharing many more exciting
-                  runs in the future!
-                  <br/>
-                  <br/> Congratulate Beatie by Donating to Beit Daniella– Click
-                  <a target="_blank" href="https://thechesedfund.com/cause/beit-daniella-therapeutic-rehabilitative-day-center">here</a>
-    
-                </p>
-              </div>
-              <div class="col-md-3">
-                <img style="width: 100%;" src="img/ddPics/beatieMarathonFinish.jpg" alt="Imperial">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-4"></div>
-              <div class="col-md-4">
-                <div class="embed-responsive embed-responsive-9by16">
-                  <iframe class="embed-responsive-item" src="" data-url="https://www.youtube.com/embed/yM1kiGV6jmA?rel=0" frameborder="0" allow="autoplay; encrypted-media"
-                    allowfullscreen></iframe>
+        </div>
+        <div class="container about-container wow fadeInUp">
+          <!--        daniella's pics from above-->
+          <div class="row">
+            <div class="col-md-6 about-content">
+              <p class="about-text">
+                    
+                <div class="wFormContainer" >
+                    <div class="wFormHeader"></div>
+                    <style type="text/css"></style><div class=""><div class="wForm" id="0-WRPR" dir="ltr">
+                <div class="codesection" id="code-0"></div>
+                <h3 class="wFormTitle" data-testid="form-title" id="0-T">Edit Form Title</h3>
+                <form method="post" action="https://www.tfaforms.com/api_v2/workflow/processor" class="hintsBelow labelsAbove" id="0" role="form">
+                <div class="oneField field-container-D    " id="tfa_1-D">
+                <label id="tfa_1-L" class="label preField " for="tfa_1">Name</label><br><div class="inputWrapper"><input type="text" id="tfa_1" name="tfa_1" value="" title="Name" class=""></div>
                 </div>
-              </div>
-              <div class="col-md-4"></div>
+                <div class="actions" id="0-A"><input type="submit" data-label="Submit" class="primaryAction" id="submit_button" value="Submit"></div>
+                <div style="clear:both"></div>
+                <input type="hidden" value="4954801" name="tfa_dbFormId" id="tfa_dbFormId"><input type="hidden" value="" name="tfa_dbResponseId" id="tfa_dbResponseId"><input type="hidden" value="0f11547735ba70943f0123d5b15a3e6b" name="tfa_dbControl" id="tfa_dbControl"><input type="hidden" value="" name="tfa_dbWorkflowSessionUuid" id="tfa_dbWorkflowSessionUuid"><input type="hidden" value="1" name="tfa_dbVersionId" id="tfa_dbVersionId"><input type="hidden" value="" name="tfa_switchedoff" id="tfa_switchedoff">
+                </form>
+                </div></div><div class="wFormFooter"><p class="supportInfo"><a target="new" class="contactInfoLink" href="https://www.tfaforms.com/forms/help/4954801" data-testid="contact-info-link">Contact Information</a><br></p></div>
+                  <p class="supportInfo" >
+                      </p>
+                 </div>
+                
+
+              </p>
+            </div>
+            <div class="col-md-6 about-content">
+              <img src="img/Marathon/marathon2019.jpg" style="width:100%" />
             </div>
           </div>
         </div>
       </section>
-      <!-- #header (15) -->
+      <!-- #header (3) -->
     
 
 
