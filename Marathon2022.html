@@ -103,15 +103,16 @@
     });
 </script>
 
-<link href="https://www.tfaforms.com/dist/form-builder/5.0.0/wforms-layout.css?v=1642415947" rel="stylesheet" type="text/css" />
+<link href="https://www.tfaforms.com/dist/form-builder/5.0.0/wforms-layout.css?v=1642589466" rel="stylesheet" type="text/css" />
 
 <link href="https://www.tfaforms.com/uploads/themes/theme-68007.css" rel="stylesheet" type="text/css" />
-<link href="https://www.tfaforms.com/dist/form-builder/5.0.0/wforms-jsonly.css?v=1642415947" rel="alternate stylesheet" title="This stylesheet activated by javascript" type="text/css" />
-<script type="text/javascript" src="https://www.tfaforms.com/wForms/3.11/js/wforms.js?v=1642415947"></script>
+<link href="https://www.tfaforms.com/dist/form-builder/5.0.0/wforms-jsonly.css?v=1642589466" rel="alternate stylesheet" title="This stylesheet activated by javascript" type="text/css" />
+<script type="text/javascript" src="https://www.tfaforms.com/wForms/3.11/js/wforms.js?v=1642589466"></script>
 <script type="text/javascript">
     wFORMS.behaviors.prefill.skip = false;
 </script>
-    <script type="text/javascript" src="https://www.tfaforms.com/wForms/3.11/js/localization-he.js?v=1642415947"></script>
+    <script type="text/javascript" src="https://www.tfaforms.com/wForms/3.11/js/localization-he.js?v=1642589466"></script>
+
 
 
 
@@ -332,7 +333,7 @@
                     Marathon script from here
                 ======================================================= -->  
                 <div id= "Form">
-                <!-- FORM: BODY SECTION -->
+               <!-- FORM: BODY SECTION -->
 <div class="wFormContainer" >
     <div class="wFormHeader"></div>
     <style type="text/css"></style><div class=""><div class="wForm" id="4955159-WRPR" dir="rtl">
@@ -376,7 +377,7 @@
 <div id="tfa_46" class="section group">
 <label class="label preField" id="tfa_46-L">Marathon Shirt&nbsp; &nbsp;חולצת מרתון</label><br><div id="tfa_47" class="section inline group">
 <div class="oneField field-container-D    " id="tfa_15-D">
-<label id="tfa_15-L" class="label preField " for="tfa_15">Shirt size&nbsp; &nbsp; מידת חולצה</label><br><div class="inputWrapper"><select id="tfa_15" name="tfa_15" title="Shirt size    מידת חולצה" class=""><option value="">נא לבחור ערך...</option>
+<label id="tfa_15-L" class="label preField reqMark" for="tfa_15">Shirt size&nbsp; &nbsp; מידת חולצה</label><br><div class="inputWrapper"><select aria-required="true" id="tfa_15" name="tfa_15" title="Shirt size    מידת חולצה" class="required"><option value="">נא לבחור ערך...</option>
 <option value="tfa_16" id="tfa_16" class="">6 kids</option>
 <option value="tfa_17" id="tfa_17" class="">8 kids</option>
 <option value="tfa_18" id="tfa_18" class="">10 kids</option>
@@ -393,7 +394,7 @@
 <option value="tfa_41" id="tfa_41" class="">XXXL</option></select></div>
 </div>
 <div class="oneField field-container-D    " id="tfa_42-D">
-<label id="tfa_42-L" class="label preField " for="tfa_42">Sleeve length&nbsp; &nbsp;אורך שרוול</label><br><div class="inputWrapper"><select id="tfa_42" multiple name="tfa_42[]" title="Sleeve length   אורך שרוול" class=""><option value="">נא לבחור ערך...</option>
+<label id="tfa_42-L" class="label preField reqMark" for="tfa_42">Sleeve length&nbsp; &nbsp;אורך שרוול</label><br><div class="inputWrapper"><select aria-required="true" id="tfa_42" multiple name="tfa_42[]" title="Sleeve length   אורך שרוול" class="required"><option value="">נא לבחור ערך...</option>
 <option value="tfa_43" id="tfa_43" class="">Short קצר</option>
 <option value="tfa_44" id="tfa_44" class="">3/4</option></select></div>
 </div>
@@ -411,23 +412,25 @@
 <th scope="col">5000</th>
 <th scope="col">Other/אחר</th>
 </tr></thead>
-<tbody><tr id="tfa_29" class="oneField   alternate-0 " role="radiogroup" aria-labelledby="tfa_29-L" data-tfa-labelledby="-L tfa_29-L">
-<th scope="row" class="headerCol"><label id="tfa_29-L" for="tfa_29" class="label "></label></th>
-<td><span class="oneChoice"><input type="radio" value="tfa_30" class="" id="tfa_30" name="tfa_29" title="1000 (Until age 20&amp;nbsp; &amp;nbsp;עד גיל 20)"></span></td>
-<td><span class="oneChoice"><input type="radio" value="tfa_31" class="" id="tfa_31" name="tfa_29" title="1500"></span></td>
-<td><span class="oneChoice"><input type="radio" value="tfa_32" class="" id="tfa_32" name="tfa_29" title="2500"></span></td>
-<td><span class="oneChoice"><input type="radio" value="tfa_34" class="" id="tfa_34" name="tfa_29" title="3000"></span></td>
-<td><span class="oneChoice"><input type="radio" value="tfa_35" class="" id="tfa_35" name="tfa_29" title="5000"></span></td>
-<td><span class="oneChoice"><input type="radio" value="tfa_36" class="" id="tfa_36" name="tfa_29" data-conditionals="#tfa_40" title="Other/אחר"></span></td>
+<tbody><tr id="tfa_29" class="oneField required  alternate-0 " role="radiogroup" aria-labelledby="tfa_29-L" data-tfa-labelledby="-L tfa_29-L">
+<th scope="row" class="headerCol"><label id="tfa_29-L" for="tfa_29" class="label reqMark"></label></th>
+<td><span class="oneChoice"><input type="radio" value="tfa_30" class="" id="tfa_30" name="tfa_29" aria-required="true" title="1000 (Until age 20&amp;nbsp; &amp;nbsp;עד גיל 20)"></span></td>
+<td><span class="oneChoice"><input type="radio" value="tfa_31" class="" id="tfa_31" name="tfa_29" aria-required="true" title="1500"></span></td>
+<td><span class="oneChoice"><input type="radio" value="tfa_32" class="" id="tfa_32" name="tfa_29" aria-required="true" title="2500"></span></td>
+<td><span class="oneChoice"><input type="radio" value="tfa_34" class="" id="tfa_34" name="tfa_29" aria-required="true" title="3000"></span></td>
+<td><span class="oneChoice"><input type="radio" value="tfa_35" class="" id="tfa_35" name="tfa_29" aria-required="true" title="5000"></span></td>
+<td><span class="oneChoice"><input type="radio" value="tfa_36" class="" id="tfa_36" name="tfa_29" aria-required="true" data-conditionals="#tfa_40" title="Other/אחר"></span></td>
 </tr></tbody>
 </table>
 <div class="oneField field-container-D    " id="tfa_40-D">
-<label id="tfa_40-L" class="label preField " for="tfa_40">Other Amount&nbsp; &nbsp; סכום אחר</label><br><div class="inputWrapper"><input type="text" id="tfa_40" name="tfa_40" value="" data-condition="`#tfa_36`" title="Other Amount    סכום אחר" class="validate-integer"></div>
+<label id="tfa_40-L" class="label preField " for="tfa_40">Other Amount&nbsp; &nbsp; סכום אחר</label><br><div class="inputWrapper">
+<input type="text" id="tfa_40" name="tfa_40" value="" aria-describedby="tfa_40-HH" min="1000" data-condition="`#tfa_36`" title="Other Amount    סכום אחר" class="validate-integer"><span class="field-hint-inactive" id="tfa_40-H"><span id="tfa_40-HH" class="hint"> 1500 הכנס ערך מעל Enter amount above </span></span>
+</div>
 </div>
 </fieldset>
 <div class="actions" id="4955159-A"><input type="submit" data-label="Sign me up תרשמו אותי" class="primaryAction" id="submit_button" value="Sign me up תרשמו אותי"></div>
 <div style="clear:both"></div>
-<input type="hidden" value="4955159" name="tfa_dbFormId" id="tfa_dbFormId"><input type="hidden" value="" name="tfa_dbResponseId" id="tfa_dbResponseId"><input type="hidden" value="63772ae64fc2a6fb5dd7afd282175746" name="tfa_dbControl" id="tfa_dbControl"><input type="hidden" value="" name="tfa_dbWorkflowSessionUuid" id="tfa_dbWorkflowSessionUuid"><input type="hidden" value="13" name="tfa_dbVersionId" id="tfa_dbVersionId"><input type="hidden" value="" name="tfa_switchedoff" id="tfa_switchedoff">
+<input type="hidden" value="4955159" name="tfa_dbFormId" id="tfa_dbFormId"><input type="hidden" value="" name="tfa_dbResponseId" id="tfa_dbResponseId"><input type="hidden" value="63772ae64fc2a6fb5dd7afd282175746" name="tfa_dbControl" id="tfa_dbControl"><input type="hidden" value="" name="tfa_dbWorkflowSessionUuid" id="tfa_dbWorkflowSessionUuid"><input type="hidden" value="17" name="tfa_dbVersionId" id="tfa_dbVersionId"><input type="hidden" value="" name="tfa_switchedoff" id="tfa_switchedoff">
 </form>
 </div></div><div class="wFormFooter"><p class="supportInfo"><a target="new" class="contactInfoLink" href="https://www.tfaforms.com/forms/help/4955159" data-testid="contact-info-link">פרטי יצירת קשר</a><br></p></div>
   <p class="supportInfo" >
